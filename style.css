@@ -32,7 +32,7 @@ header {
 header img {
 
     width: 15.625em;
-
+    margin-top: 0.625em;
 }
 
 /*Fim*/
@@ -71,7 +71,7 @@ section {
 }
 
 .arrows {
-    width: 70vw;
+    width: 80vw;
     position: absolute;
     top: 50%;
     left: 50%;

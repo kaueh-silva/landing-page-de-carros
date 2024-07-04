@@ -30,7 +30,7 @@ nextButton.onclick = () => {
     dotsOld.classList.remove("active")
     dots[active].classList.add("active")
 
-    indicator.querySelector(".number").innerHTML = "0"(active + 1)
+    indicator.querySelector(".number").innerHTML = "0" + (active + 1)
 
 
 
@@ -38,16 +38,16 @@ nextButton.onclick = () => {
 
 prevButton.onclick = () => {
     let itemOld = container.querySelector(".list .item.active")
-
     itemOld.classList.remove("active")
 
-    active = active + 1 > lastPosition ? 0 : active + 1
+
+    active = active - 1 < fistPosition ? lastPosition : active - 1
     items[active].classList.add("active")
 
     let dotsOld = indicator.querySelector("ul li.active")
     dotsOld.classList.remove("active")
     dots[active].classList.add("active")
 
-    indicator.querySelector(".number").innerHTML = "0"(active + 1)
+    indicator.querySelector(".number").innerHTML = "0" + (active + 1)
 }
 
